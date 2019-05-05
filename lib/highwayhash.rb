@@ -9,8 +9,8 @@ module Highwayhash
     :HighwayHash64, [
       :pointer,   # secret key (4 uint64 numbers)
       :pointer,   # data to be hashed
-      :uint64_t   # length of data
-    ], :uint64_t
+      :ulong_long   # length of data
+    ], :ulong_long
 
   private def hash64(input, key)
     raise ArgumentError.new("Key length must be 32 bytes") if key.size != 32
@@ -25,7 +25,7 @@ module Highwayhash
 
     input_p = FFI::MemoryPointer.from_string(data)
 
-    key_p = FFI::MemoryPointer.new(:uint64_t, 4)
+    key_p = FFI::MemoryPointer.new(:ulong_long, 4)
     key_p.write_array_of_uint64(key.unpack("Q4"))
 
     __highway_hash64(key_p, input_p, input_size)

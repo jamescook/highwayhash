@@ -14,6 +14,7 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    rake (12.3.2)
 
 PLATFORMS
   ruby
@@ -22,6 +23,7 @@ DEPENDENCIES
   highwayhash!
   minitest (~> 5)
   pry
+  rake
 
 BUNDLED WITH
-   1.16.0
+   1.17.2
