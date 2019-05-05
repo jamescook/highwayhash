@@ -2,6 +2,8 @@
 
 Binding for the HighwayHash64 function defined in [google/highwayhash](https://github.com/google/highwayhash)
 
+[![Build Status](https://travis-ci.com/jamescook/highwayhash.svg?branch=master)](https://travis-ci.com/jamescook/highwayhash)
+
 ### Requirements
 - highwayhash must be compiled and installed where FFI can find it
   (e.g in /usr/local/lib)
