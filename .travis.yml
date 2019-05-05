@@ -6,3 +6,9 @@ rvm:
   - 2.4
   - 2.3
   - 2.2
+
+before_install:
+  - git clone https://github.com/google/highwayhash.git __highwayhash
+  - cd __highwayhash
+  - make && sudo make install
+  - cd -
