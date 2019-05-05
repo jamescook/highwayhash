@@ -1,6 +1,6 @@
 # Highwayhash Ruby Bindings
 
-Binding for the HighwayHash64 function defined in google/highwayhash
+Binding for the HighwayHash64 function defined in [google/highwayhash](https://github.com/google/highwayhash)
 
 ### Requirements
 - highwayhash must be compiled and installed where FFI can find it
